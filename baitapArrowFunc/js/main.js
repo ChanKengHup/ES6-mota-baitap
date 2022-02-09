@@ -25,14 +25,14 @@ for (let i = 0; i<button.length; i++) {
         button[i].className += " active"
 
         colorList.map((color, index) => {
+            let colorHouse = document.getElementById("house");
             if(i == index) {
                 let currentColor = colorList[index];
-                let house = document.getElementById("house");
-                house.classList.add(currentColor);
+                colorHouse.classList.add(currentColor);
             }
             else {
                 let currentColor = colorList[index];
-                house.classList.remove(currentColor);
+                colorHouse.classList.remove(currentColor);
             }
         })
     }
