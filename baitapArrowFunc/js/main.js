@@ -22,7 +22,7 @@ for (let i = 0; i<button.length; i++) {
         let currentActive = document.querySelectorAll(".active")
         currentActive[0].className = currentActive[0].className.replace(" active", "");
         // thêm active cho những element hện tại click chưa có
-        button[i].className += " active";
+        button[i].className += " active"
 
         colorList.map((color, index) => {
             if(i == index) {
